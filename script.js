@@ -62,7 +62,7 @@ for(j = 0; j< $('.db_table3').length;j++){
 	skill.v_class = row[3].children[0].children[0].textContent;
 	skill.type[0] = row[3].children[1].children[0].getAttribute('data-tooltip-value');
 	skill.type[1] = row[3].children[1].textContent;
-	skill.type[1] = type[1].substring(type[1].indexOf('>')+1);
+	skill.type[1] = skill.type[1].substring(skill.type[1].indexOf('>')+1);
 	skill.req = row[3].children[2].textContent;
 	skill.description = row[5].children[0].textContent;
 	
